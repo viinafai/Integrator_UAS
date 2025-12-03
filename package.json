@@ -9,9 +9,10 @@
     "test": "echo \"Testing endpoints...\" && node -e \"const fetch = require('node-fetch'); Promise.all(['http://localhost:3000/api/health', 'http://localhost:3000/api/integrate'].map(url => fetch(url).then(r => console.log(url, r.status))))\""
   },
   "dependencies": {
-    "express": "^4.18.2",
-    "node-fetch": "^3.3.2",
-    "debug": "^4.3.4"
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "express": "^4.22.1",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

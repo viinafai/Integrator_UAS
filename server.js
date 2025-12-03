@@ -73,7 +73,7 @@ function processVendorC(data) {
   });
 }
 
-// Routes
+
 app.get('/', (req, res) => {
   res.json({
     message: 'Integrator API - UAS Interoperabilitas',
@@ -143,8 +143,7 @@ app.get('/api/integrate', async (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
-  console.log('=================================');
+app.listen(PORT, () => {  console.log('=================================');
   console.log(`Integrator running on port ${PORT}`);
   console.log(`http://localhost:${PORT}/api/integrate`);
   console.log('=================================');
